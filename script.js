@@ -1,23 +1,22 @@
-const bar = document.getElementById('bar');
-const close = document.getElementById('close');
-const nav = document.getElementById('navbar');
+const bar = document.getElementById("bar");
+const close = document.getElementById("close");
+const nav = document.getElementById("navbar");
 
-if(bar) {
-  bar.addEventListener('click', () => {
-    nav.classList.add('active');
-  })
-};
+if (bar) {
+  bar.addEventListener("click", () => {
+    nav.classList.add("active");
+  });
+}
 
-if(close) {
-  close.addEventListener('click', () => {
-    nav.classList.remove('active');
-  })
-};
-
+if (close) {
+  close.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+}
 
 const productsData = [
   {
-    brand: "Americano Series",
+    brand: "Gleek Signature",
     items: [
       {
         name: "Triple Peach Americano",
@@ -43,11 +42,6 @@ const productsData = [
         price: "Rp 24.000",
         link: "sproduct.html",
       },
-    ],
-  },
-  {
-    brand: "Coffee",
-    items: [
       {
         name: "Iced Café Latte",
         img: "img/products/n1.jpeg",
@@ -72,11 +66,6 @@ const productsData = [
         price: "Rp 24.000",
         link: "sproduct.html",
       },
-    ],
-  },
-  {
-    brand: "Coffe Bean",
-    items: [
       {
         name: "Iced Café Latte",
         img: "img/products/n5.jpeg",
@@ -101,11 +90,6 @@ const productsData = [
         price: "Rp 29.000",
         link: "sproduct.html",
       },
-    ],
-  },
-  {
-    brand: "Coffee of The Day",
-    items: [
       {
         name: "Iced Café Latte",
         img: "img/products/n5.jpeg",
@@ -131,6 +115,93 @@ const productsData = [
         link: "sproduct.html",
       },
     ],
+  },
+  {
+    brand: "Coffee",
+    // items: [
+    //   {
+    //     name: "Iced Café Latte",
+    //     img: "img/products/n1.jpeg",
+    //     price: "Rp 24.000",
+    //     link: "sproduct.html",
+    //   },
+    //   {
+    //     name: "Nutty Oat Latte",
+    //     img: "img/products/n2.jpeg",
+    //     price: "Rp 24.000",
+    //     link: "sproduct.html",
+    //   },
+    //   {
+    //     name: "Iced Caramel Praline Macchiato",
+    //     img: "img/products/n3.jpeg",
+    //     price: "Rp 24.000",
+    //     link: "sproduct.html",
+    //   },
+    //   {
+    //     name: "Hot Café Latte",
+    //     img: "img/products/n4.jpeg",
+    //     price: "Rp 24.000",
+    //     link: "sproduct.html",
+    //   },
+    // ],
+  },
+  {
+    brand: "Coffe Bean",
+    //   items: [
+    //     {
+    //       name: "Iced Café Latte",
+    //       img: "img/products/n5.jpeg",
+    //       price: "Rp 29.000",
+    //       link: "sproduct.html",
+    //     },
+    //     {
+    //       name: "Iced Bumi Latte",
+    //       img: "img/products/n6.jpeg",
+    //       price: "Rp 29.000",
+    //       link: "sproduct.html",
+    //     },
+    //     {
+    //       name: "Double Iced Shaken Latte",
+    //       img: "img/products/n7.jpeg",
+    //       price: "Rp 29.000",
+    //       link: "sproduct.html",
+    //     },
+    //     {
+    //       name: "Hot Cappuccino",
+    //       img: "img/products/n8.jpeg",
+    //       price: "Rp 29.000",
+    //       link: "sproduct.html",
+    //     },
+    //   ],
+    // },
+    // {
+    //   brand: "Coffee of The Day",
+    //   items: [
+    //     {
+    //       name: "Iced Café Latte",
+    //       img: "img/products/n5.jpeg",
+    //       price: "Rp 21.000",
+    //       link: "sproduct.html",
+    //     },
+    //     {
+    //       name: "Iced Americano",
+    //       img: "img/products/f2.jpeg",
+    //       price: "Rp 21.000",
+    //       link: "sproduct.html",
+    //     },
+    //     {
+    //       name: "Hot Café Latte",
+    //       img: "img/products/g1.jpeg",
+    //       price: "Rp 21.000",
+    //       link: "sproduct.html",
+    //     },
+    //     {
+    //       name: "Hot Cappuccino",
+    //       img: "img/products/g2.jpeg",
+    //       price: "Rp 21.000",
+    //       link: "sproduct.html",
+    //     },
+    //   ],
   },
   {
     brand: "Signature Beans",
@@ -203,5 +274,3 @@ productsData.forEach((category) => {
   brandSection.appendChild(proContainer);
   categoriesContainer.appendChild(brandSection);
 });
-
-
